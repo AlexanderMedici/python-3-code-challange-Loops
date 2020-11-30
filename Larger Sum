@@ -1,0 +1,41 @@
+CODE CHALLENGE: LOOPS
+Larger Sum
+larger_sum(lst1, lst2)
+
+Instructions
+1.
+Create a function named larger_sum() that takes two lists of numbers as parameters named lst1 and lst2.
+
+The function should return the list whose elements sum to the greater number. If the sum of the elements of each list are equal, return lst1.
+
+
+Hint
+Create variables named sum1 and sum2 and set them to be 0. Loop through each list separately and add to the appropriate variable. After looping through each list, compare the two sums in an if statement and return the correct list.
+
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+
+problem 
+#Write your function here
+
+
+#Uncomment the line below when your function is done
+#print(larger_sum([1, 9, 5], [2, 3, 7]))
+
+solution 
+
+#Write your function here
+def larger_sum(lst1, lst2):
+  sum1 = 0
+  sum2 = 0
+  for number in lst1:
+    sum1 += number
+  for number in lst2:
+    sum2 += number
+  if sum1 >= sum2:
+    return lst1
+  else: 
+    return lst2
+
+#Uncomment the line below when your function is done
+print(larger_sum([1, 9, 5], [2, 3, 7]))
