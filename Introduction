@@ -1,0 +1,22 @@
+ODE CHALLENGE: LOOPS
+Introduction
+This lesson will help you review Python functions by providing some challenge exercises involving loops.
+
+As a refresher, function syntax looks like this:
+
+def some_function(some_input1, some_input2):
+  … do something with the inputs …
+  return output
+For example, a function that prints all odd numbers in a list would look like this:
+
+def odd_nums(lst):
+  for item in lst:
+    if item % 2 == 1:
+      print(item)
+And this would produce output like:
+
+>>> odd_nums([4, 7, 9, 10, 13])
+7
+9
+13
+When you’re ready to do this series of short function challenges, continue on to the rest of the lesson!
