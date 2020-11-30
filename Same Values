@@ -1,0 +1,40 @@
+CODE CHALLENGE: LOOPS
+Same Values
+same_values(lst1, lst2)
+
+Instructions
+1.
+Write a function named same_values() that takes two lists of numbers of equal size as parameters.
+
+The function should return a list of the indices where the values were equal in lst1 and lst2.
+
+For example, the following code should return [0, 2, 3]
+
+same_values([5, 1, -10, 3, 3], [5, 10, -10, 3, 5])
+
+Hint
+Loop through all of the indices of each list using for index in range(len(lst1)) and compare lst1[index] to lst2[index]. Append index to a new list if those two items are equal.
+
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+
+problems 
+#Write your function here
+
+
+#Uncomment the line below when your function is done
+#print(same_values([5, 1, -10, 3, 3], [5, 10, -10, 3, 5]))
+
+solution 
+
+#Write your function here
+def same_values(lst1, lst2):
+  new_lst = []
+  for index in range(len(lst1)):
+    if lst1[index] == lst2[index]:
+      new_lst.append(index)
+  return new_lst
+
+#Uncomment the line below when your function is done
+print(same_values([5, 1, -10, 3, 3], [5, 10, -10, 3, 5]))
+
