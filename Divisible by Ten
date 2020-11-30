@@ -1,0 +1,40 @@
+CODE CHALLENGE: LOOPS
+Divisible by Ten
+divisible_by_ten(nums)
+
+Instructions
+1.
+Create a function named divisible_by_ten() that takes a list of numbers named nums as a parameter.
+
+Return the count of how many numbers in the list are divisible by 10.
+
+
+Hint
+Create a counter that starts at 0. Inside the loop, whenever you find a number divisible by ten, add 1 to that counter.
+
+x is divisible by ten if x % 10 == 0 is True.
+
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+
+
+problem 
+#Write your function here
+
+
+#Uncomment the line below when your function is done
+#print(divisible_by_ten([20, 25, 30, 35, 40]))
+
+
+
+solution 
+#Write your function here
+def divisible_by_ten(nums):
+  count = 0
+  for number in nums:
+    if (number % 10 == 0):
+      count += 1
+  return count
+
+#Uncomment the line below when your function is done
+print(divisible_by_ten([20, 25, 30, 35, 40]))
