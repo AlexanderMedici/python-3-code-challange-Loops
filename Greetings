@@ -1,0 +1,37 @@
+CODE CHALLENGE: LOOPS
+Greetings
+add_greetings(names)
+
+Instructions
+1.
+Create a function named add_greetings() which takes a list of strings named names as a parameter.
+
+In the function, create an empty list that will contain each greeting. Add the string "Hello, " in front of each name in names and append the greeting to the list.
+
+Return the new list containing the greetings.
+
+
+Hint
+Use + to concatenate "Hello, " with every name in names. Don’t forget to add the comma and the space to the greeting!
+
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+
+problem
+
+#Write your function here
+
+
+#Uncomment the line below when your function is done
+#print(add_greetings(["Owen", "Max", "Sophie"]))
+
+solution
+#Write your function here
+def add_greetings(names):
+  new_list = []
+  for name in names:
+    new_list.append("Hello, " + name)
+  return new_list
+
+#Uncomment the line below when your function is done
+print(add_greetings(["Owen", "Max", "Sophie"]))
