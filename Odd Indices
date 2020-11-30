@@ -1,0 +1,39 @@
+CODE CHALLENGE: LOOPS
+Odd Indices
+odd_indices(lst)
+
+Instructions
+1.
+Create a function named odd_indices() that has one parameter named lst.
+
+The function should create a new empty list and add every element from lst that has an odd index. The function should then return this new list.
+
+For example, odd_indices([4, 3, 7, 10, 11, -2]) should return the list [3, 10, -2].
+
+
+Hint
+There are a few ways to do this. range(1, len(lst), 2) will create a list of the indices you’re interested in. So you could loop through that list like this:
+
+for index in range(1, len(lst), 2):
+  new_list.append(lst[index])
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+porblem 
+
+#Write your function here
+
+
+#Uncomment the line below when your function is done
+#print(odd_indices([4, 3, 7, 10, 11, -2]))
+
+solution 
+
+#Write your function here
+def odd_indices(lst):
+  new_lst = []
+  for index in range(1, len(lst), 2):
+    new_lst.append(lst[index])
+  return new_lst
+
+#Uncomment the line below when your function is done
+print(odd_indices([4, 3, 7, 10, 11, -2]))
